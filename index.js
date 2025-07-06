@@ -5,10 +5,10 @@ const path = require("path");
 const envPath = path.resolve(__dirname, ".env");
 const envConfig = dotenv.config({ path: envPath });
 
-if (envConfig.error) {
-  console.error("Error loading .env file:", envConfig.error);
-  throw envConfig.error;
-}
+// if (envConfig.error) {
+//   console.error("Error loading .env file:", envConfig.error);
+//   throw envConfig.error;
+// }
 
 // Debug: Log all environment variables and the .env file path
 // console.log("Environment Variables:", process.env);
